@@ -2,7 +2,7 @@ package fruit;
 
 public class FruitBuyer {
 
-	// 속성 : 변수
+	// 	속성 : 변수
 	//	보유한 나의 돈
 	//	사과의 개수
 	int myMoney = 10000;
