@@ -4,6 +4,23 @@ import java.util.Scanner;
 
 public class FriendInfoHandler {
 
+	// 2020.04.28
+	// 싱글톤처리
+	// 1) 생성자 접근제어지시자 : private
+	// 	   인스턴스 생성 막는다.
+	// 2) 공동으로 사용 할 인스턴스 생성 : static private
+	// 3) 참조변수 반환 메서드 : static public
+	
+	//내부에서 볼 수 있도록 private 쓴다.
+	private static FriendInfoHandler handler = new FriendInfoHandler(100);
+	
+	//외부에서 볼 수 있도록 static 쓴다.
+	static FriendInfoHandler getInstance() {
+		return handler;
+	}
+	
+	
+	
 	// Friend 타입의 정보를 저장 할 배열을 가진다.
 	// 친구정보를 저장하는 기능.
 	// 친구정보의 기본정보 출력 기능.
@@ -16,7 +33,7 @@ public class FriendInfoHandler {
 	Scanner kb;
 	
 	// 생성자 초기화 : 저장공간의 크기를 받아서 배열을 생성 할 것이다.
-	FriendInfoHandler(int num){
+	private FriendInfoHandler(int num){
 		myFriends = new Friend[num];
 		numOfFriend = 0;
 		kb = new Scanner(System.in);

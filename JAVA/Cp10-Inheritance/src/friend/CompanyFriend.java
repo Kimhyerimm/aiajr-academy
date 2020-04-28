@@ -8,7 +8,7 @@ public abstract class CompanyFriend extends Friend{
 	}
     
 	
-	void showData() {
+	public void showData() {
 		
 	}
 }

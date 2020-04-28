@@ -12,7 +12,7 @@ package friend;
 	고교 = 친구
 	이름,전번,주소,직업
 */
-public abstract class Friend {
+public abstract class Friend implements Info {
 	
 	
 	String name; 	 // 친구의 이름
@@ -40,7 +40,7 @@ public abstract class Friend {
 //	}
 	
 	// 추상 메서드 생성
-	abstract void showData();
+	//abstract void showData();
 
 
 
