@@ -1,4 +1,4 @@
-package ex;
+package ver01;
 
 public class MemberMain {
 
