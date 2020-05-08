@@ -96,26 +96,4 @@ package ver03;
 	      
 	   }
 	   
-	   // 배열에서 이름을 기준으로 검색 후 index 값을 반환
-	   int searchIndex(String name) {
-	      
-	      int searchIndex = -1;
-	      
-	      // 사용자가 입력한 이름으로 배열에 요소를 검색 --> index를 찾아야함
-	      for(int i=0; i<cnt; i++) {
-	         if(mBooks[i].checkName(name)) {
-	            searchIndex = i;
-	            break;
-	         }
-	      }
-	      
-	      return searchIndex;
-	      
-	   }
-
-
-	public void searchInfo() {
-		// TODO Auto-generated method stub
-		
-	}
 	}

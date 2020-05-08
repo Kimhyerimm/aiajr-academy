@@ -24,10 +24,7 @@ public class MemberMain {
 		          // MemberInfor info = manager.createInstance();
 		          // manager.addInfo(info)
 		          manager.addInfo();
-		          break;
-		       case 2:
-		          // 정보를 배열에 저장
-		          manager.searchInfo();
+		         
 		          break;
 		       }
 		    }
