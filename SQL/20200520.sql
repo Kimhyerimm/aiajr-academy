@@ -213,6 +213,7 @@ group by deptno
 having avg(sal)<=2000
 ;
 
+
 -- 직급별, 지표 출력      -- 한글로 표현하는건 큰 따옴표
 select job, count(*) as "직급별 인원",
             sum(sal) as "직급별 월 총 급여",
