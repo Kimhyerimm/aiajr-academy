@@ -153,4 +153,29 @@ insert into emp03 values (1111, 'test123', 'manager', 20);
 insert into emp03 values (null, 'test123', 'manager', 20);
 select * from emp03;IUH
 
+--입력 SQL 작성
+
+desc phonebook;
+
+--기본정보 입력
+insert into phonebook (pbidx, pbname, pbaddr, pbmail, pbtype)
+values 
+(1, 'scott', '010-1234-1234', 'SEOUL', 'scott@gmail.com', 'UNIV');
+
+--default 입력 처리 pbaddr, pbemail
+insert into phonebook (pbidx, pbname, pbtype)
+values 
+(2, 'king', '010-9999-9999', 'UNIV');
+
+
+
+--학교 친구 정보 입력
+insert into phonebook (pbidx, pbname, pbaddr, pbmail, pbtype, pbmajor, pbgrade)
+values 
+(3, 'son', '010-1234-1234', 'SEOUL', 'scott@gmail.com', 'UNIV', 'computer', 4);
+
+--회사 친구 정보 입력
+insert into phonebook (pbidx, pbname, pbaddr, pbmail, pbtype, pbcomname, pbcomdept)
+values 
+(4, 'park', '010-4444-4444', 'SEOUL', 'scott@gmail.com', 'COMPANY', 'LG', sale);
 
