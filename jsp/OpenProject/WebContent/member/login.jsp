@@ -1,4 +1,4 @@
-<%@page import="model.LoginInfo"%>
+<%@page import="guestbook.model.LoginInfo"%>
 <%@page import="util.CookieBox"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>

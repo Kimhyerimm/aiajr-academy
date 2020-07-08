@@ -1,4 +1,4 @@
-<%@page import="model.MemberInfo"%>
+<%@page import="guestbook.model.MemberInfo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
